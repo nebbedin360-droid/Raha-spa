@@ -8,7 +8,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -26,13 +28,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 12px 20px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   z-index: 1000;
 }
 
-.logo { display: flex; align-items: center; }
-.logo img { height: 40px; margin-right: 10px; }
+header h2 {
+  margin: 0;
+}
 
 nav a {
   text-decoration: none;
@@ -48,17 +51,18 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   text-align: center;
+  color: white;
 }
 
 .hero h1 {
   background: rgba(0,0,0,0.5);
   padding: 20px;
   border-radius: 10px;
+  font-size: 35px;
 }
 
-/* SECTION */
+/* SECTIONS */
 .section {
   padding: 60px 20px;
   max-width: 1100px;
@@ -90,6 +94,7 @@ nav a {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 /* GALLERY */
@@ -121,22 +126,39 @@ iframe {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  z-index: 999;
 }
 
-.call-btn { bottom: 20px; background: green; }
-.whatsapp-btn { bottom: 70px; background: #25D366; }
+.call-btn {
+  bottom: 20px;
+  background: green;
+}
+
+.whatsapp-btn {
+  bottom: 70px;
+  background: #25D366;
+}
 
 /* FOOTER */
 footer {
   background: #111;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
+  margin-top: 40px;
 }
 
-/* MOBILE */
-@media(max-width:768px){
-  .about { grid-template-columns: 1fr; }
+.footer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+footer img {
+  height: 40px;
+  border-radius: 6px;
 }
 </style>
 </head>
@@ -144,10 +166,7 @@ footer {
 <body>
 
 <header>
-  <div class="logo">
-    <img src="logo.png">
-    <h2>Raha Spa</h2>
-  </div>
+  <h2>Raha Spa</h2>
 
   <nav>
     <a href="#about">About</a>
@@ -166,7 +185,10 @@ footer {
   <img src="about.jpg">
   <div>
     <h2>About Us</h2>
-    <p>Raha Spa offers salon, spa, massage, hair, and nail services in Addis Ababa. Enjoy a relaxing and refreshing experience.</p>
+    <p>
+      Raha Spa in Addis Ababa provides professional salon, spa, massage, hair, and nail services.
+      We focus on relaxation, beauty, and customer satisfaction.
+    </p>
   </div>
 </section>
 
@@ -197,7 +219,7 @@ footer {
 <!-- CONTACT -->
 <section class="section" id="contact">
   <h2>Contact Us</h2>
-  <p><a href="tel:0904557744">Call: 090 455 7744</a></p>
+  <p><a href="tel:0904557744">📞 Call: 090 455 7744</a></p>
 
   <iframe src="https://www.google.com/maps?q=8.987070,38.781988&z=15&output=embed"></iframe>
 </section>
@@ -206,9 +228,15 @@ footer {
 <a class="call-btn" href="tel:0904557744">Call Now</a>
 <a class="whatsapp-btn" href="https://wa.me/251904557744">WhatsApp</a>
 
+<!-- FOOTER -->
 <footer>
-  Raha Spa | 090 455 7744 <br><br>
-  <small>Made by Nebbedin</small>
+  <div class="footer-box">
+    <img src="logo.jpg">
+    <div>
+      Raha Spa | 090 455 7744 <br>
+      <small>Made by Nebbedin</small>
+    </div>
+  </div>
 </footer>
 
 </body>
