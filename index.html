@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raha Spa | Relax & Refresh</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100%;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+header h2 {
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('images/hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 45px;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ABOUT */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.service {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* BUTTONS */
+.call-btn, .whatsapp-btn {
+  position: fixed;
+  right: 20px;
+  padding: 14px 18px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.call-btn {
+  bottom: 20px;
+  background: #28a745;
+}
+
+.whatsapp-btn {
+  bottom: 80px;
+  background: #25D366;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>Raha Spa</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Relax • Refresh • Renew</h1>
+</div>
+
+<!-- ABOUT -->
+<div class="section about" id="about">
+  <img src="images/about.jpg">
+  <div>
+    <h2>About Us</h2>
+    <p>Raha Spa in Addis Ababa offers professional spa, salon, massage, hair, and nail services. 
+    Our goal is to provide a relaxing and refreshing experience with high-quality care and comfort.</p>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div class="section" id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service">Acne Treatment</div>
+    <div class="service">Massage Therapy</div>
+    <div class="service">Hair & Styling</div>
+    <div class="service">Nails & Beauty</div>
+    <div class="service">Shampoo & Conditioning</div>
+    <div class="service">Waxing</div>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div class="section">
+  <h2>Our Spa</h2>
+  <div class="gallery">
+    <img src="images/spa1.jpg">
+    <img src="images/spa2.jpg">
+    <img src="images/spa3.jpg">
+    <img src="images/about.jpg">
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section contact" id="contact">
+  <h2>Contact Us</h2>
+  <p><a href="tel:0904557744">📞 Call: 090 455 7744</a></p>
+
+  <iframe src="https://www.google.com/maps?q=8.987070,38.781988&z=15&output=embed"></iframe>
+</div>
+
+<!-- BUTTONS -->
+<a class="call-btn" href="tel:0904557744">Call Now</a>
+<a class="whatsapp-btn" href="https://wa.me/251904557744">WhatsApp</a>
+
+<footer>
+  Raha Spa | 090 455 7744 <br>
+  Made by Nebil
+</footer>
+
+</body>
+</html>
